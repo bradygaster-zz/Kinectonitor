@@ -5,13 +5,14 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F1A1DC6D-5D93-4312-BDA0-29902257A489}</ProjectGuid>
+    <ProjectGuid>{4E54E250-AB59-448D-8A07-773A17197AC9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Kinectonitor</RootNamespace>
-    <AssemblyName>Kinectonitor</AssemblyName>
+    <RootNamespace>Kinectonitor.Azure.Worker</RootNamespace>
+    <AssemblyName>Kinectonitor.Azure.Worker</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <RoleType>Worker</RoleType>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,10 +33,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.ServiceBus, Version=1.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.WindowsAzure.Diagnostics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.WindowsAzure.StorageClient, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,10 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ImageMessage.cs" />
-    <Compile Include="ImageStoredMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ServiceBusUtilities.cs" />
+    <Compile Include="WorkerRole.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -55,6 +55,10 @@
     <ProjectReference Include="..\..\ServiceBusSimplifier\ServiceBusSimplifier\ServiceBusSimplifier.csproj">
       <Project>{C3E6DA35-598B-4E6E-97D1-0FB3D01A5933}</Project>
       <Name>ServiceBusSimplifier</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kinectonitor\Kinectonitor.csproj">
+      <Project>{F1A1DC6D-5D93-4312-BDA0-29902257A489}</Project>
+      <Name>Kinectonitor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

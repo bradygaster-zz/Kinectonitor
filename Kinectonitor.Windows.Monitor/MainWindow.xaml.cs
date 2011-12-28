@@ -62,7 +62,7 @@ namespace Kinectonitor.Windows.Monitor
 			_timer.Interval = 3000;
 			_timer.Elapsed += new ElapsedEventHandler(OnTimerElapsed);
 
-			_bus = ServiceBus.Setup(ServiceBusUtilities.GetServiceBusCredentials());
+			//_bus = ServiceBus.Setup(ServiceBusUtilities.GetServiceBusCredentials());
 		}
 
 		void OnTimerElapsed(object sender, ElapsedEventArgs e)
@@ -92,11 +92,13 @@ namespace Kinectonitor.Windows.Monitor
 						fs.Read(imageData, 0, imageData.Length);
 					}
 
+					/*
 					_bus.Publish<ImageMessage>(new ImageMessage
 					{
 						Filename = System.IO.Path.GetFileName(filename),
 						ImageData = imageData
 					});
+					*/
 				}
 			}));
 		}

@@ -12,9 +12,9 @@ namespace Kinectonitor
 		{
 			return new InitializationRequest
 			{
-				IssuerKey = "[your issuer key]",
-				Issuer = "[your issuer",
-				Namespace = "[your namespace"
+				IssuerKey = "",
+				Issuer = "",
+				Namespace = ""
 			};
 		}
 	}
