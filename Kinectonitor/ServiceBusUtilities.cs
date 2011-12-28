@@ -12,9 +12,9 @@ namespace Kinectonitor
 		{
 			return new InitializationRequest
 			{
-				IssuerKey = "QS3GFImGyiuQMfExDJKcjfEZx0T0kvBTfgWNLtHVagA=",
-				Issuer = "owner",
-				Namespace = "nimblesquidqa01"
+				IssuerKey = "",
+				Issuer = "",
+				Namespace = ""
 			};
 		}
 	}
