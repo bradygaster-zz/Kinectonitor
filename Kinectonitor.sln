@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kinectonitor", "Kinectonito
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kinectonitor.Web", "Kinectonitor.Web\Kinectonitor.Web.csproj", "{E43D57A3-2E68-4C28-AE54-97ABC098DBED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceBusSimplifier", "..\ServiceBusSimplifier\ServiceBusSimplifier\ServiceBusSimplifier.csproj", "{C3E6DA35-598B-4E6E-97D1-0FB3D01A5933}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceBusSimplifier", "ServiceBusSimplifier\ServiceBusSimplifier\ServiceBusSimplifier.csproj", "{C3E6DA35-598B-4E6E-97D1-0FB3D01A5933}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kinectonitor.Windows.Monitor", "Kinectonitor.Windows.Monitor\Kinectonitor.Windows.Monitor.csproj", "{53F5FED6-D93E-48BB-9343-A1A883514FF9}"
 EndProject
