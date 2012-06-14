@@ -37,7 +37,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.ServiceBus, Version=1.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ServiceBus, Version=1.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Runtime.Serialization" />
@@ -98,7 +98,7 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\ServiceBusSimplifier\ServiceBusSimplifier\ServiceBusSimplifier.csproj">
+    <ProjectReference Include="..\ServiceBusSimplifier\ServiceBusSimplifier\ServiceBusSimplifier.csproj">
       <Project>{C3E6DA35-598B-4E6E-97D1-0FB3D01A5933}</Project>
       <Name>ServiceBusSimplifier</Name>
     </ProjectReference>

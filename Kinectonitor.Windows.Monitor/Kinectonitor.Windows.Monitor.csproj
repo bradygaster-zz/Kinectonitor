@@ -98,7 +98,7 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\ServiceBusSimplifier\ServiceBusSimplifier\ServiceBusSimplifier.csproj">
+    <ProjectReference Include="..\ServiceBusSimplifier\ServiceBusSimplifier\ServiceBusSimplifier.csproj">
       <Project>{C3E6DA35-598B-4E6E-97D1-0FB3D01A5933}</Project>
       <Name>ServiceBusSimplifier</Name>
     </ProjectReference>

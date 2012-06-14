@@ -9,6 +9,7 @@ namespace ServiceBusSimplifier
 {
 	public class ServiceBus
 	{
+        
 		string _namespace;
 		string _issuer;
 		string _issuerKey;
